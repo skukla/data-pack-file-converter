@@ -1,116 +1,24 @@
 Write a ruby program.
-The program should be well-structured
 The program should use classes stored in lib/
 The program should have a main.rb file that is the entry point for the application
 The purpose of the program is to convert files between json and csv formats
+The program will expect a file path to a single json or csv file
 
-The program should accept the following:
-  A single file or a directory of files of either csv or json type
-  An optional --format option for the user to specify the ouput format
-  A --help option for the user to get help about the program
+For the given file, the program will:
+  Determine the file format
+  Read the file's data
+  Compare the file data's structure to a corresponding template file that has the desired shape of output
+  For example, if a json file is passed, compare it's data to a corresponding csv template
+  Conversely, if a csv file is passed, compare it's data to a corresponding json template
+  Map the input file data to the output template
+  Write a new output file
+  For example, if settings.json is passed:
+    Compare the data to a csv template file called settings.csv
+    Map the json data into the csv format
+    Write the new csv file called settings.csv
+  If settings.csv is passed:
+    Compare the data to a csv template file called settings.json
+    Map the csv data into the json format
+    Write the new json file called settings.json
 
-Here is the main challenge the program should solve:
-
-I have a collection of data files which can be in either json or csv format.
-
-JSON Files:
-Each json file describes data in a similar way, but not an identical way.
-There are two types of json files.
-The first type is a description of csv-style data.
-The second type is a description of json-style data.
-
-CSV-Style JSON
-The csv-style data file structure follows a similar pattern which looks like this:
-
-{"data": { "uniqueKey: { "data": "CSV-shaped data goes here as a string" } } }
-
-Here's an example of two of those files. It has a header row followed by two value rows just for illustration:
-
-# customers.json
-{
-  "data": {
-    "customerExport": {
-      "data": "[[\"header1\",\"header2\",\"header3\"],[\"value1\",\"value2\",\"value3\"],[\"value1\",\"value2\",\"value3\"]]"
-    }
-  }
-}
-
-# customer_addresses.json
-{
-  "data": {
-    "customerAddressExport": {
-      "data": "[[\"header1\",\"header2\",\"header3\"],[\"value1\",\"value2\",\"value3\"],[\"value1\",\"value2\",\"value3\"]]"
-    }
-  }
-}
-
-JSON-Style JSON
-Like the CSV-Style data, the JSON-Style data begins with an outer data object.
-After that, the structure is entirely different from the CSV-style data.
-There are a fixed number of json-style files, and each file has its own unique format inside the outer data object.
-Here are two examples:
-
-# settings.json
-{
-  "data": {
-    "dataInstallerStoreSettings": {
-      "site_code": "btg",
-      "store_code": "btg_store",
-      "store_view_code": "btg_us_en"
-    }
-  }
-}
-
-# admin_users.json
-{
-  "data": {
-    "adminUsers": {
-      "items": [
-        {
-          "email": "leah@adobe.com",
-          "firstname": "Leah",
-          "lastname": "Smith",
-          "password": "Password1",
-          "role": "Administrators",
-          "username": "leah"
-        },
-        {
-          "email": "kukla@adobe.com",
-          "firstname": "Steve",
-          "lastname": "Smith",
-          "password": "Password1",
-          "role": "Administrators",
-          "username": "steve"
-        }
-      ]
-    }
-  }
-}
-
-The ruby program should provide a way for me to provide a template for each file to use as a file format example.
-
-As an example:
-
-json_templates/
-  customers.json
-  customer_addresses.json
-  settings.json
-  admin_users.json
-
-csv_templates/
-  customers.csv
-  customer_addresses.csv
-  settings.csv
-  admin_users.csv
-
-When a user provides a single filename, check for the extension of the filename.
-If no output flag is passed, assume the output is the opposite of the input.  E.g. if the input is a json file, the output should be csv and vice versa
-
-Use the corresponding template file with a filename and matching output extension
-
-For example, if customers.csv is passed as input:
-  Check to see if a customers.json template exists
-    If it doesn't show an error
-  If it does, use the template data shape to create a new customers.json file which plugs in data from the input file.
-
-When a user provides a directory of files, glob them and create new files for each using the same logic
+Use separate classes for handling arguments, handling errors, handling file reading/writing, printing output, and mapping data
