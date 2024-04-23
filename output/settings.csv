@@ -1,9 +1,4 @@
-{
-  "data": {
-    "dataInstallerStoreSettings": {
-      "site_code": "base",
-      "store_code": "main_website_store",
-      "store_view_code": "default"
-    }
-  }
-}
+name,value
+site_code,bodea
+store_code,bodea_store
+store_view_code,us_en
