@@ -13,13 +13,12 @@ class App
     @output_extension = get_output_extension
     @output_filename = create_output_filename
     @output_file_path = create_output_file_path
-    @output_content = nil
   end
 
   def converter_map()
     [
-      { file: 'settings', class: SettingsConverter.new(@input_file) },
-      { file: 'stores', class: StoresConverter.new(@input_file) },
+      { file: 'settings', class: SettingsConverter },
+      { file: 'stores', class: StoresConverter },
     ]
   end
   
@@ -28,34 +27,33 @@ class App
     
     abort("No converter for the given file type!") if converter.nil?
     
-    @converter = converter[:class]
+    @converter = converter[:class].new(@input_file)
   end
 
   def parse_input()    
     case @input_file.extension
     when '.csv'
-      @output_content = @converter.parse_csv(@input_file.content)
+      @converter.parse_csv
     when '.json'
-      @output_content = @converter.parse_json(@input_file.content)
+      @converter.parse_json
     end
   end
 
   def convert_input()    
     case @input_file.extension
     when '.csv'
-      @output_content = @converter.convert_to_json(@output_content)
+      @converter.convert_to_json
     when '.json'
-      @output_content = @converter.convert_to_csv(@output_content)
+      @converter.convert_to_csv
     end
   end
 
   def write_ouput()    
-    
     output_file = FileHandler.new(@output_file_path, @output_extension)
 
     puts "Writing #{@output_filename}..."
-    
-    output_file.write(@output_content)
+
+    output_file.write(@converter.data)
   end
 
   private
