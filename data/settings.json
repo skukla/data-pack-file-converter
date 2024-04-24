@@ -3,7 +3,11 @@
     "dataInstallerStoreSettings": {
       "site_code": "bodea",
       "store_code": "bodea_store",
-      "store_view_code": "us_en"
+      "store_view_code": "us_en",
+      "is_override": true,
+      "product_image_import_directory": "var/import",
+      "restrict_products_from_views": true,
+      "product_validation_strategy": "validation-stop-on-errors"
     }
   }
 }

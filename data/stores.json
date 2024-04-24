@@ -1,0 +1,20 @@
+{
+  "data": {
+    "storeConfig": {
+      "is_default_view": true,
+      "is_default_store": true,
+      "root_category_id": 2,
+      "root_category_uid": "Ag==",
+      "store_view_code": "btg_us_en",
+      "store_code": "btg_store",
+      "store_name": "Blinds To Go Store",
+      "view_name": "US English",
+      "view_order": 1,
+      "site_code": "btg",
+      "site_name": "Blinds To Go",
+      "store_root_category": "BTG Catalog",
+      "theme": "Kukla/btg",
+      "theme_fallback": "Magento/luma"
+    }
+  }
+}
