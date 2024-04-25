@@ -1,33 +1,32 @@
 require 'csv'
 require 'json'
 
+require_relative 'BaseConverter'
+
 # lib/converters/SettingsConverter.rb
 class SettingsConverter < BaseConverter
   def initialize(file)
     super
+    @json_key = "dataInstallerStoreSettings"
   end
 
-  def set_headers()
-    @data.shift # Remove headers
-    %w[name value]
+  def csv_headers
+    @data.keys
+  end
+
+  def csv_data
+    @data = @data.values
   end
   
-  def get_json_data()
-    JSON.parse(@data)['data']['dataInstallerStoreSettings']
+  def convert_csv_to_json()
+    remove_csv_headers
+    csv_to_hash
+    hash_to_json
   end
 
-  def parse_csv()
-    set_headers
-    @data = @data.to_h.to_json
-  end
-  
-  def parse_json()
-    @data = get_json_data.map { |key, value| [key.to_s, value.to_s] }
-  end
-
-  def convert_to_json()
-    parsed_json = JSON.parse(@data)
-    @data = {"data": { "dataInstallerStoreSettings":parsed_json } }
-    @data = JSON.pretty_generate(@data)
+  def convert_json_to_csv()
+    string_to_json
+    extract_json_body
+    build_csv
   end
 end
