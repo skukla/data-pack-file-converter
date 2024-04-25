@@ -6,6 +6,7 @@ require_relative 'lib/AppFile'
 args = ArgumentHandler.new(ARGV).parse_arguments
 input_file = AppFile.new(args)
 app = App.new(input_file)
-
-app.run
+app.create_output_dir
+app.load_converter
+pp app.converter.data
 

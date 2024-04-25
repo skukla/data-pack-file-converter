@@ -5,6 +5,8 @@ require_relative 'converters/SettingsConverter'
 require_relative 'converters/StoresConverter'
 
 class App
+  attr_reader :input_file, :converter
+
   def initialize(input_file)
     @app_root = Pathname.getwd.to_s
     @output_dir = File.join(@app_root,'output')
@@ -56,8 +58,6 @@ class App
     output_file.write(@converter.data)
   end
 
-  private
-
   def create_output_dir()
     Dir.mkdir(@output_dir) unless Dir.exist?(@output_dir)
   end
@@ -78,15 +78,5 @@ class App
   def create_output_file_path()
     File.join(@output_dir, @output_filename)
     
-  end
-
-  public
-
-  def run
-    create_output_dir
-    load_converter
-    parse_input
-    convert_input
-    write_ouput
   end
 end
