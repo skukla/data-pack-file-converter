@@ -6,7 +6,7 @@ class BaseConverter
   def initialize(file)
     @data = file.content
   end
-
+  
   # CSV to JSON
   def remove_csv_headers
     @data.shift
@@ -26,11 +26,12 @@ class BaseConverter
       hash_from_array[key] = value
     end
 
-    @data = add_data_shell(hash_from_array)
+    @data = hash_from_array
   end
 
   def build_json
-    @data = JSON.pretty_generate(@data)
+    json_data = add_data_shell(@data)
+    @data = JSON.pretty_generate(json_data)
   end
 
   # JSON to CSV
@@ -50,6 +51,12 @@ class BaseConverter
     @data = @data["data"][@json_key]
   end
 
+  def hash_to_rows    
+    @data = @data.each_with_object([]) do |row, arr|
+      arr << row
+    end
+  end
+
   def set_csv_headers(headers_arr = nil)
     return @data.keys if headers_arr.nil?
 
@@ -57,9 +64,13 @@ class BaseConverter
   end
 
   def set_csv_data
-    return @data.values if is_csv_single_row?
+    if @data.is_a?(Hash)
+      return @data.values if is_csv_single_row?
 
-    [@data.values]
+      [@data.values]
+    end
+
+    @data
   end
 
   def build_csv

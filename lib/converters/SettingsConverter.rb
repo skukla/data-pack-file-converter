@@ -25,6 +25,7 @@ class SettingsConverter < BaseConverter
   def convert_json_to_csv()
     string_to_json
     extract_json_body
+    hash_to_rows
     build_csv
   end
 end
