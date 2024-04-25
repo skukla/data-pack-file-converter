@@ -9,7 +9,7 @@ args = ArgumentHandler.new(ARGV).parse_arguments
 input_file = InputFile.new(args)
 app = App.new(input_file)
 app.load_converter
-data = app.converter.convert_json_to_csv
-output_file = OutputFile.new(File.join(app.output_dir, ".json"), data)
-
-pp output_file
+app.create_output_dir
+data = app.get_data
+output_file = OutputFile.new(app.output_file, data)
+app.write_ouput(output_file)

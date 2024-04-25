@@ -9,10 +9,4 @@ class OutputFile < AppFile
     super
     @content = content
   end
-
-  def content
-    return nil if content.nil || content.empty?
-    
-    content
-  end
 end

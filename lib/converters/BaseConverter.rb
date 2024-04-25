@@ -13,6 +13,10 @@ class BaseConverter
     @data
   end
 
+  def add_data_shell(data)
+    @data = { "data": { "#{@json_key}": data } }
+  end
+  
   def csv_to_hash
     hash_from_array = {}
 
@@ -22,10 +26,12 @@ class BaseConverter
       hash_from_array[key] = value
     end
 
-    @data = hash_from_array
+    @data = add_data_shell(hash_from_array)
   end
 
-  def hash_to_json
+  
+
+  def build_json
     @data = JSON.pretty_generate(@data)
   end
 
@@ -39,6 +45,9 @@ class BaseConverter
   end
 
   def build_csv
-    [csv_headers, csv_data]
+    {
+      headers: csv_headers,
+      rows: csv_data
+    }
   end
 end

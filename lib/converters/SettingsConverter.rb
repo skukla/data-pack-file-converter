@@ -15,13 +15,13 @@ class SettingsConverter < BaseConverter
   end
 
   def csv_data
-    @data = @data.values
+    @data.values
   end
   
   def convert_csv_to_json()
     remove_csv_headers
     csv_to_hash
-    hash_to_json
+    build_json
   end
 
   def convert_json_to_csv()
