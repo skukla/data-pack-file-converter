@@ -14,24 +14,18 @@ class BaseConverter
   end
 
   def add_data_shell(data)
-    @data = { "data": { "#{@json_key}": data } }
-  end
-  
-  def csv_to_hash
-    hash_from_array = {}
-
-    @data.each do |inner_array|
-      key = inner_array[0]
-      value = inner_array[1]
-      hash_from_array[key] = value
-    end
-
-    @data = hash_from_array
+    @data = { "data": { "#{data_key}": data } }
   end
 
   def build_json
     json_data = add_data_shell(@data)
     @data = JSON.pretty_generate(json_data)
+  end
+
+  def hash_to_csv    
+    @data = @data.each_with_object([]) do |row, arr|
+      arr << row
+    end
   end
 
   # JSON to CSV
@@ -48,13 +42,7 @@ class BaseConverter
   end
 
   def extract_json_body
-    @data = @data["data"][@json_key]
-  end
-
-  def hash_to_rows    
-    @data = @data.each_with_object([]) do |row, arr|
-      arr << row
-    end
+    @data = @data["data"][data_key]
   end
 
   def set_csv_headers(headers_arr = nil)

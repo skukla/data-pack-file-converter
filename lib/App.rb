@@ -1,6 +1,6 @@
 require 'pathname'
 require_relative 'converters/SettingsConverter'
-
+require_relative 'converters/StoresConverter'
 
 class App
   attr_reader :input_file, :converter, :output_dir
@@ -15,7 +15,8 @@ class App
 
   def converter_map()
     [
-      { file: 'settings', class: SettingsConverter }
+      { file: 'settings', class: SettingsConverter },
+      { file: 'stores', class: StoresConverter }
     ]
   end
   
