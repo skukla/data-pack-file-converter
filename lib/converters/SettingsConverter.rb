@@ -5,17 +5,15 @@ require_relative 'BaseConverter'
 
 # lib/converters/SettingsConverter.rb
 class SettingsConverter < BaseConverter
+  attr_accessor :headers
+  
   def initialize(file)
     super
     @json_key = "dataInstallerStoreSettings"
   end
 
-  def csv_headers
-    @data.keys
-  end
-
-  def csv_data
-    @data.values
+  def set_csv_headers
+    %w[name value]
   end
   
   def convert_csv_to_json()

@@ -6,7 +6,7 @@ require_relative './FileHandler.rb'
 class AppFile
   attr_reader :path, :filename, :extension, :type
 
-  def initialize(file_path, content = nil)
+  def initialize(file_path, headers = nil, content = nil)
     @path = file_path
     @filename = File.basename(@path)
     @extension = File.extname(@path)

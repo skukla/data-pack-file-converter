@@ -53,7 +53,7 @@ class App
 
   def write_ouput(file)    
     handler = FileHandler.new(file.path, file.extension)
-
+    
     puts "Writing #{file.filename}..."
     
     handler.write(file.content)
