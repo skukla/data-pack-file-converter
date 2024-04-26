@@ -5,7 +5,7 @@ require_relative './AppFile.rb'
 class InputFile < AppFile
   attr_accessor :content
   
-  def initialize(file_path, content = nil)  
+  def initialize(file_path)  
     super
     @content = content
   end

@@ -3,14 +3,17 @@ require_relative 'converters/SettingsConverter'
 require_relative 'converters/StoresConverter'
 
 class App
-  attr_reader :input_file, :converter, :output_dir
+  attr_reader :converter, :input_file_list, :output_dir
+  attr_accessor :input_file
 
-  def initialize(input_file)
+  def initialize()
     @app_root = Pathname.getwd.to_s
-    @input_file = input_file
     @output_dir = File.join(@app_root,'output')
-    @output_file = output_file
+    @input_file = nil
+    @output_file = nil
     @converter = nil
+
+    create_output_dir
   end
 
   def converter_map()
@@ -18,6 +21,14 @@ class App
       { file: 'settings', class: SettingsConverter },
       { file: 'stores', class: StoresConverter }
     ]
+  end
+
+  def load_input_files(argument)
+    if File.directory?(argument)
+      Dir.glob(File.join(argument, "*"))
+    else
+      [argument]
+    end
   end
   
   def load_converter()
@@ -36,7 +47,12 @@ class App
   end
 
   def create_output_dir()
-    Dir.mkdir(@output_dir) unless Dir.exist?(@output_dir)
+    if !Dir.exist?(@output_dir)
+      print "Creating output directory..."
+      Dir.mkdir(@output_dir) unless Dir.exist?(@output_dir)
+      sleep 0.25
+      puts "done."
+    end
   end
 
   def output_extension()
@@ -49,7 +65,7 @@ class App
   end
   
   def output_file()
-    File.join(@output_dir, "#{@input_file.type}#{output_extension}")
+    @output_file = File.join(@output_dir, "#{@input_file.type}#{output_extension}")
   end
 
   def write_ouput(file)    

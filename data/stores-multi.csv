@@ -1,5 +1,0 @@
-site_code,site_name,site_order,is_default_site,store_code,store_name,store_root_category,is_default_store,store_view_code,view_name,is_default_view,view_order,view_is_active,theme,host
-base,Main Website,1,Y,main_website_store,Main Website Store,Default Category,Y,default,US English,Y,1,Y,Magento/luma,
-bodea_ca,Bodea Canada,2,Y,bodea_canada_store,Bodea Canada Store,Default Category,Y,bodea_ca_en,CA English,Y,1,Y,Magento/luma,
-bodea_ca,Bodea Canada,2,N,bodea_canada_store,Bodea Canada Store,Default Category,N,bodea_ca_fr,CA French,N,2,Y,Magento/luma,
-bodea_jp,Bodea Japan,3,Y,bodea_japan_store,Bodea Japan Store,Default Category,Y,bodea_ja_jp,Japanese,Y,1,Y,Magento/luma,

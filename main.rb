@@ -6,10 +6,12 @@ require_relative 'lib/OutputFile'
 require_relative 'lib/FileHandler'
 
 args = ArgumentHandler.new(ARGV).parse_arguments
-input_file = InputFile.new(args)
-app = App.new(input_file)
-app.load_converter
-app.create_output_dir
-data = app.get_data
-output_file = OutputFile.new(app.output_file, data)
-app.write_ouput(output_file)
+app = App.new()
+app.load_input_files(args).each do |file_path|
+  app.input_file = InputFile.new(file_path)
+  app.load_converter
+  data = app.get_data
+  output_file = OutputFile.new(app.output_file, data)
+  app.write_ouput(output_file)
+end
+
