@@ -1,20 +1,22 @@
 {
   "data": {
     "storeConfig": {
-      "is_default_view": true,
-      "is_default_store": true,
-      "root_category_id": 2,
-      "root_category_uid": "Ag==",
-      "store_view_code": "btg_us_en",
-      "store_code": "btg_store",
-      "store_name": "Blinds To Go Store",
-      "view_name": "US English",
-      "view_order": 1,
       "site_code": "btg",
       "site_name": "Blinds To Go",
+      "site_order": 1,
+      "is_default_site": "Y",
+      "store_code": "btg_store",
+      "store_name": "Blinds To Go Store",
       "store_root_category": "BTG Catalog",
+      "is_default_store": true,
+      "store_view_code": "btg_us_en",
+      "view_name": "US English",
+      "is_default_view": true,
+      "view_order": 1,
+      "view_is_active": "Y",
       "theme": "Kukla/btg",
-      "theme_fallback": "Magento/luma"
+      "theme_fallback": "Magento/luma",
+      "host": null
     }
   }
 }

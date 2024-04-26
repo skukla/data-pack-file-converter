@@ -16,18 +16,6 @@ class SettingsConverter < BaseConverter
   def set_csv_headers
     %w[name value]
   end
-
-  def csv_to_hash
-    hash_from_array = {}
-
-    @data.each do |inner_array|
-      key = inner_array[0]
-      value = inner_array[1]
-      hash_from_array[key] = value
-    end
-
-    @data = hash_from_array
-  end
   
   def convert_csv_to_json()
     remove_csv_headers

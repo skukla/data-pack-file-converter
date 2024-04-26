@@ -17,15 +17,35 @@ class BaseConverter
     @data = { "data": { "#{data_key}": data } }
   end
 
+  def convert_int_and_bool(data)
+    result = data.merge(data) { |key, value| Integer(value) rescue value }
+
+    result.transform_values do |value|
+      if value.to_s == 'true'
+        true
+      elsif value.to_s == 'false'
+        false
+      else
+        value
+      end
+    end
+  end
+
   def build_json
     json_data = add_data_shell(@data)
     @data = JSON.pretty_generate(json_data)
   end
 
-  def hash_to_csv    
-    @data = @data.each_with_object([]) do |row, arr|
-      arr << row
+  def csv_to_hash
+    hash_from_array = {}
+
+    @data.each do |inner_array|
+      key = inner_array[0]
+      value = inner_array[1]
+      hash_from_array[key] = value
     end
+
+    @data = convert_int_and_bool(hash_from_array)
   end
 
   # JSON to CSV
@@ -45,17 +65,23 @@ class BaseConverter
     @data = @data["data"][data_key]
   end
 
-  def set_csv_headers(headers_arr = nil)
-    return @data.keys if headers_arr.nil?
+    def hash_to_csv    
+    @data = @data.each_with_object([]) do |row, arr|
+      arr << row
+    end
+  end
+
+  def set_csv_headers(headers_arr = nil)  
+    if @data.is_a?(Hash)
+      return @data.keys if headers_arr.nil?
+    end
 
     headers_arr
   end
 
   def set_csv_data
     if @data.is_a?(Hash)
-      return @data.values if is_csv_single_row?
-
-      [@data.values]
+      @data = [@data.values]
     end
 
     @data
