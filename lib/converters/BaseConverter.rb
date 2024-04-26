@@ -36,15 +36,16 @@ class BaseConverter
     @data = JSON.pretty_generate(json_data)
   end
 
-  def csv_to_hash
+    def csv_to_hash      
+    keys = @data[0]
+    values = @data[1]
+    
     hash_from_array = {}
-
-    @data.each do |inner_array|
-      key = inner_array[0]
-      value = inner_array[1]
-      hash_from_array[key] = value
+    
+    keys.each_with_index do |key, index|
+      hash_from_array[key] = values[index]
     end
-
+    
     @data = convert_int_and_bool(hash_from_array)
   end
 
