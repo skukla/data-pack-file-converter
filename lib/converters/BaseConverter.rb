@@ -1,10 +1,15 @@
 require 'csv'
 require 'json'
 
+require_relative '../../utils/DataUtility'
+
 # lib/converters/BaseConverter.rb
-class BaseConverter  
+class BaseConverter
+  include DataUtility
+  
   def initialize(file)
     @data = file.content
+    @extension = file.extension
   end
   
   # CSV to JSON
@@ -16,27 +21,8 @@ class BaseConverter
   def add_data_shell(data)
     @data = { "data": { "#{data_key}": data } }
   end
-
-  def convert_int_and_bool(data)
-    result = data.merge(data) { |key, value| Integer(value) rescue value }
-
-    result.transform_values do |value|
-      if value.to_s == 'true'
-        true
-      elsif value.to_s == 'false'
-        false
-      else
-        value
-      end
-    end
-  end
-
-  def build_json
-    json_data = add_data_shell(@data)
-    @data = JSON.pretty_generate(json_data)
-  end
-
-    def csv_to_hash      
+  
+  def csv_to_hash      
     keys = @data[0]
     values = @data[1]
     
@@ -46,7 +32,12 @@ class BaseConverter
       hash_from_array[key] = values[index]
     end
     
-    @data = convert_int_and_bool(hash_from_array)
+    @data = hash_from_array
+  end
+
+  def build_json
+    json_data = add_data_shell(@data)
+    @data = JSON.pretty_generate(json_data)
   end
 
   # JSON to CSV
@@ -66,7 +57,7 @@ class BaseConverter
     @data = @data["data"][data_key]
   end
 
-    def hash_to_csv    
+  def hash_to_csv
     @data = @data.each_with_object([]) do |row, arr|
       arr << row
     end

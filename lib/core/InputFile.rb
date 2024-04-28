@@ -1,5 +1,4 @@
 # InputFile.rb
-
 require_relative './AppFile.rb'
 
 class InputFile < AppFile

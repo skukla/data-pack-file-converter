@@ -2,6 +2,7 @@
 class StoresConverter < BaseConverter
   def initialize(file)
     @data = file.content
+    @extension = file.extension
   end
 
   def data_key
@@ -10,12 +11,14 @@ class StoresConverter < BaseConverter
 
   def convert_csv_to_json()
     csv_to_hash
+    convert_values
     build_json
   end
 
   def convert_json_to_csv()
     string_to_json
     extract_json_body
+    convert_values
     build_csv
   end
 end

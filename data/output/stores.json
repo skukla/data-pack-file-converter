@@ -1,0 +1,21 @@
+{
+  "data": {
+    "storeConfig": {
+      "site_code": "base",
+      "site_name": "Main Website",
+      "site_order": 1,
+      "is_default_site": true,
+      "store_code": "main_website_store",
+      "store_name": "Main Website Store",
+      "store_root_category": "Default Category",
+      "is_default_store": true,
+      "store_view_code": "default",
+      "view_name": "US English",
+      "is_default_view": true,
+      "view_order": 1,
+      "view_is_active": true,
+      "theme": "Magento/luma",
+      "host": null
+    }
+  }
+}

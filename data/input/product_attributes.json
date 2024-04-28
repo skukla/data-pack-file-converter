@@ -1,0 +1,106 @@
+{
+  "data": {
+    "customAttributeMetadata": {
+      "items": [
+        {
+          "attribute_code": "bod_analog_input_resolution",
+          "store_view_code": "default",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "value": "65",
+              "label": "12 bits",
+              "swatch_value": null
+            },
+            {
+              "value": "66",
+              "label": "16 bits",
+              "swatch_value": null
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": true,
+            "is_filterable_in_search": true,
+            "is_visible_on_front": true,
+            "position": 0
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Analog Input Resolution",
+            "is_comparable": 1,
+            "is_filterable_in_grid": 0,
+            "is_html_allowed_on_front": 1,
+            "is_pagebuilder_enabled": 0,
+            "is_required_in_admin_store": 0,
+            "is_searchable": 1,
+            "is_used_for_price_rules": 0,
+            "is_used_for_promo_rules": 1,
+            "is_used_in_grid": 0,
+            "is_visible": 1,
+            "is_visible_in_advanced_search": 1,
+            "is_visible_in_grid": 0,
+            "is_wysiwyg_enabled": 0,
+            "search_weight": 1,
+            "used_for_sort_by": 0
+          }
+        },
+        {
+          "attribute_code": "bod_analog_input_voltage_range",
+          "store_view_code": "default",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "value": "75",
+              "label": "-1 V to 1 V",
+              "swatch_value": null
+            },
+            {
+              "value": "76",
+              "label": "1 Vpp",
+              "swatch_value": null
+            },
+            {
+              "value": "77",
+              "label": "1.25 Vpp",
+              "swatch_value": null
+            },
+            {
+              "value": "78",
+              "label": "200 mVpp",
+              "swatch_value": null
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": true,
+            "is_filterable_in_search": true,
+            "is_visible_on_front": true,
+            "position": 0
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Analog Input Voltage Range",
+            "is_comparable": 1,
+            "is_filterable_in_grid": 0,
+            "is_html_allowed_on_front": 1,
+            "is_pagebuilder_enabled": 0,
+            "is_required_in_admin_store": 0,
+            "is_searchable": 1,
+            "is_used_for_price_rules": 0,
+            "is_used_for_promo_rules": 1,
+            "is_used_in_grid": 0,
+            "is_visible": 1,
+            "is_visible_in_advanced_search": 1,
+            "is_visible_in_grid": 0,
+            "is_wysiwyg_enabled": 0,
+            "search_weight": 1,
+            "used_for_sort_by": 0
+          }
+        }
+      ]
+    }
+  }
+}

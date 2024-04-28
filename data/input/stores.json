@@ -4,7 +4,7 @@
       "site_code": "btg",
       "site_name": "Blinds To Go",
       "site_order": 1,
-      "is_default_site": "Y",
+      "is_default_site": true,
       "store_code": "btg_store",
       "store_name": "Blinds To Go Store",
       "store_root_category": "BTG Catalog",
@@ -13,7 +13,7 @@
       "view_name": "US English",
       "is_default_view": true,
       "view_order": 1,
-      "view_is_active": "Y",
+      "view_is_active": true,
       "theme": "Kukla/btg",
       "theme_fallback": "Magento/luma",
       "host": null

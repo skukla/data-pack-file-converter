@@ -16,7 +16,7 @@ class SettingsConverter < BaseConverter
   def set_csv_headers
     %w[name value]
   end
-
+  
   def csv_to_hash
     hash_from_array = {}
 
@@ -26,18 +26,20 @@ class SettingsConverter < BaseConverter
       hash_from_array[key] = value
     end
 
-    @data = convert_int_and_bool(hash_from_array)
+    @data = hash_from_array
   end
   
   def convert_csv_to_json()
     remove_csv_headers
     csv_to_hash
+    convert_values
     build_json
   end
 
   def convert_json_to_csv()
     string_to_json
     extract_json_body
+    convert_values
     hash_to_csv
     build_csv
   end

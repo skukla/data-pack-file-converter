@@ -1,6 +1,7 @@
 require 'pathname'
-require_relative 'converters/SettingsConverter'
-require_relative 'converters/StoresConverter'
+require_relative '../converters/SettingsConverter'
+require_relative '../converters/StoresConverter'
+require_relative '../converters/ProductAttributes'
 
 class App
   attr_reader :converter, :input_file_list, :output_dir
@@ -8,7 +9,7 @@ class App
 
   def initialize()
     @app_root = Pathname.getwd.to_s
-    @output_dir = File.join(@app_root,'output')
+    @output_dir = File.join(@app_root,'data', 'output')
     @input_file = nil
     @output_file = nil
     @converter = nil
@@ -19,7 +20,8 @@ class App
   def converter_map()
     [
       { file: 'settings', class: SettingsConverter },
-      { file: 'stores', class: StoresConverter }
+      { file: 'stores', class: StoresConverter },
+      { file: 'product_attributes', class: ProductAttributesConverter }
     ]
   end
 

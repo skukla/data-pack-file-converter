@@ -2,7 +2,7 @@ name,value
 site_code,base
 store_code,main_website_store
 store_view_code,default
-is_override,true
+is_override,Y
 product_image_import_directory,var/import
-restrict_products_from_views,true
+restrict_products_from_views,Y
 product_validation_strategy,validation-stop-on-errors

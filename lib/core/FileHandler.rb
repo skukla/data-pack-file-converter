@@ -1,3 +1,4 @@
+# FileHandler.rb
 class FileHandler
   def initialize(path, extension, content = nil)
     @path = path
