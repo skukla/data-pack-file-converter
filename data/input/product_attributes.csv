@@ -1,20 +1,96 @@
-attribute_set,attribute_code,frontend_label,frontend_input,option,default,default_value_text,default_value_yesno,default_value_date,default_value_textarea,is_global,is_filterable,is_filterable_in_search,is_searchable,is_visible_in_advanced_search,is_comparable,is_used_for_promo_rules,is_html_allowed_on_front,is_visible_on_front,is_required,is_unique,used_in_product_listing,used_for_sort_by,position
-"Default
-Custom
-Bags",featured_product,Featured Product,boolean,"","","","","","",1,0,0,0,0,0,1,0,0,0,0,0,0,""
-Custom,cu_product_line,Product Line,multiselect,"Men
-Women",,,,,,1,1,1,1,1,1,1,1,1,0,0,0,0,
-Custom,cu_brand,Brand,select,"Luma
-Venia",,,,,,1,1,1,1,1,1,1,1,1,0,0,0,0,
-Custom,cu_additional_information,Additional Information,texteditor,,,,,,,1,0,0,0,0,0,0,1,1,0,0,0,0,
-Custom,cu_notes,Notes,textarea,,,,,,,1,0,0,1,1,1,1,1,1,0,0,0,0,
-Custom,cu_callout,Call-out,text,,,,,,,1,0,0,1,1,1,1,1,1,0,0,0,0,
-Bags,style_bags,Style,multiselect,"Backpack
-Luggage
-Duffel
-Messenger
-Laptop
-Exercise
-Tote",,,,,,1,1,1,1,1,1,1,1,1,0,0,0,0,
-"Bags
-Custom",performance_fabric,Performance Fabric,boolean,,,,,,,1,1,1,1,1,1,1,1,1,0,0,0,0,
+attribute_code,store_view_code,frontend_input,attribute_options,is_filterable,used_in_product_listing,is_filterable_in_search,is_visible_on_front,position,additional_data,attribute_set,frontend_label,is_comparable,is_filterable_in_grid,is_html_allowed_on_front,is_pagebuilder_enabled,is_required_in_admin_store,is_searchable,is_used_for_price_rules,is_used_for_promo_rules,is_used_in_grid,is_visible,is_visible_in_advanced_search,is_visible_in_grid,is_wysiwyg_enabled,search_weight,used_for_sort_by
+bod_analog_input_resolution,bodea_us_en,multiselect,"12 bits
+16 bits",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,Analog Input Resolution,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_analog_input_voltage_range,bodea_us_en,multiselect,"-1 V to 1 V
+1 Vpp
+1.25 Vpp
+200 mVpp",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,Analog Input Voltage Range,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_analog_output_bandwidth,bodea_us_en,multiselect,"2.4 GHz
+2.9 GHz",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,Analog Output Bandwidth,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_aux_io,bodea_us_en,multiselect,"4 HSS
+8 GPIO",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,Auxiliary I/O,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_bd_digital_channels,bodea_us_en,multiselect,"16
+20
+32
+54",NO,true,true,true,0,,Bodea - FlexRio,Number of Bidirectional Digital Channels,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_block_ram,bodea_us_en,multiselect,"19 Mbit
+21 Mbit
+38 Mbit",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,Block RAM,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_cable_length,bodea_us_en,select,"2 m
+0.55 m",FILTERABLE_WITH_RESULTS,false,true,true,0,,Bodea - Cables,Cable Length,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0
+bod_cable_ohm,bodea_us_en,select,"50 Ohm
+75 Ohm",FILTERABLE_WITH_RESULTS,false,true,true,0,,Bodea - Cables,Cable Ohm,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0
+bod_cable_type,bodea_us_en,select,"Male to Male
+Male to Female",FILTERABLE_WITH_RESULTS,false,true,true,0,,Bodea - Cables,Cable Type,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0
+bod_compatible_fpga,bodea_us_en,multiselect,"Kintex-7
+Virtex-5",FILTERABLE_WITH_RESULTS,true,true,true,0,,"Bodea - Accessories
+Bodea - FlexRio",Compatible FPGA,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_digital_io_termination,bodea_us_en,multiselect,"100 Ohm
+50 Ohm",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,Digital I/O Termination,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_dram,bodea_us_en,multiselect,"0 GB
+4 GB",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,Dynamic RAM,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_dsp_slices,bodea_us_en,multiselect,"1700
+1920
+2760",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,DSP Slices,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_duplex,bodea_us_en,multiselect,"Full Duplex
+Half Duplex",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,Duplex,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_fpga,bodea_us_en,multiselect,"Kintex UltraScale KU035
+Kintex UltraScale KU040
+Kintex UltraScale KU060",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,FPGA,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_fpga_module_ram,bodea_us_en,select,"128MB
+512MB
+2G",FILTERABLE_WITH_RESULTS,false,true,true,0,,Bodea - Accessories,FPGA Module RAM,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0
+bod_fpga_slices,bodea_us_en,multiselect,"50780
+60600
+82920",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,FPGA Slices,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_hw_service_program_duration,bodea_us_en,select,"3 Year Repair Coverage
+5 Year Repair Coverage",FILTERABLE_WITH_RESULTS,false,true,true,0,,Bodea - Hardware Services,Program Duration,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0
+bod_hw_service_program_option,bodea_us_en,select,"Standard Service Program
+Premium Service Program",FILTERABLE_WITH_RESULTS,false,true,true,0,,Bodea - Hardware Services,Program Option,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0
+bod_logic_levels_range,bodea_us_en,multiselect,"1.2V
+3.3V
+1.8V
+2.5V
+LVDS
+Programmable
+RS-422/RS-485
+mLVDS",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,Logic Levels And Range,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_max_clock_rate,bodea_us_en,multiselect,"1 GHz
+100 MHz
+16 MHz
+200 MHz",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,Maximum Clock Rate,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_max_data_rate,bodea_us_en,multiselect,"1 Gbits/s
+100 Mbits/s
+16 Mbits/s
+300 Mbits/s",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,Maximum Data Rate,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_max_sample_rate,bodea_us_en,multiselect,"1 GS/s
+500 MS/s
+6.4 GS/s",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,Maximum Sample Rate,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_model,bodea_us_en,text,"",NO,false,false,true,0,,Bodea - FlexRio,Model,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_part_number,bodea_us_en,text,"",NO,false,false,true,0,,"Bodea - Accessories
+Bodea - Cables
+Bodea - EV Testing
+Bodea - FlexRio
+Bodea - Hardware Services
+Bodea - Software",Part Number,1,0,1,0,0,1,0,1,0,1,1,1,0,1,0
+bod_primary_industry,bodea_us_en,select,"Academic and Research
+Aerospace, Defense, and Government
+Electronics
+Energy
+Industrial Machinery
+Life Sciences
+Semiconductor
+Transportation
+All Industries",NO,false,false,false,0,,"Bodea - Accessories
+Bodea - Cables
+Bodea - EV Testing
+Bodea - FlexRio
+Bodea - Hardware Services
+Bodea - Software",Primary Industry,0,1,1,0,0,0,0,1,1,1,0,1,0,1,0
+bod_pxi_backplane_link,bodea_us_en,multiselect,PCI-Express Gen3 x 8,FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,PXI Backplane Link,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_reconstruction_filter,bodea_us_en,multiselect,"Yes
+No",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,Reconstruction Filter,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_signaling_type,bodea_us_en,multiselect,"Differential
+Single-Ended",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,Signaling Type,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0
+bod_voltage_input_channels,bodea_us_en,multiselect,"2
+4",FILTERABLE_WITH_RESULTS,true,true,true,0,,Bodea - FlexRio,Number of Voltage Input Channels,1,0,1,0,0,1,0,1,0,1,1,0,0,1,0

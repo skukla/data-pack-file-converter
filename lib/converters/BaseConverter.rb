@@ -1,12 +1,8 @@
 require 'csv'
 require 'json'
 
-require_relative '../../utils/DataUtility'
-
 # lib/converters/BaseConverter.rb
 class BaseConverter
-  include DataUtility
-  
   def initialize(file)
     @data = file.content
     @extension = file.extension

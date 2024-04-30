@@ -32,14 +32,12 @@ class SettingsConverter < BaseConverter
   def convert_csv_to_json()
     remove_csv_headers
     csv_to_hash
-    convert_values
     build_json
   end
 
   def convert_json_to_csv()
     string_to_json
     extract_json_body
-    convert_values
     hash_to_csv
     build_csv
   end
