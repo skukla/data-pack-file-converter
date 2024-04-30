@@ -35,7 +35,13 @@ class App
   
   def load_converter()
     converter = converter_map.select { |converter| converter[:file] == @input_file.type }.first
-    abort("There isn't a #{@input_file.type} converter in the converter map!") if converter.nil?
+    
+    if converter.nil?
+      puts "There isn't a #{@input_file.type} converter in the converter map -- skipping #{@input_file.filename}..."
+      
+      return
+    end
+
     @converter = converter[:class].new(@input_file)
   end
 
