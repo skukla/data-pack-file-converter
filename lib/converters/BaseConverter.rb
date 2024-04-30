@@ -15,7 +15,11 @@ class BaseConverter
   end
 
   def add_data_shell(data)
-    @data = { "data": { "#{data_key}": data } }
+    @data = { 
+      "data": { 
+        "#{data_key}": data
+      }
+    }
   end
   
   def csv_to_hash      

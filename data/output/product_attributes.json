@@ -1,0 +1,1274 @@
+{
+  "data": {
+    "customAttributeMetadata": {
+      "items": [
+        {
+          "attribute_code": "bod_analog_input_resolution",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "12 bits"
+            },
+            {
+              "label": "16 bits"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Analog Input Resolution",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_analog_input_voltage_range",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "-1 V to 1 V"
+            },
+            {
+              "label": "1 Vpp"
+            },
+            {
+              "label": "1.25 Vpp"
+            },
+            {
+              "label": "200 mVpp"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Analog Input Voltage Range",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_analog_output_bandwidth",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "2.4 GHz"
+            },
+            {
+              "label": "2.9 GHz"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Analog Output Bandwidth",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_aux_io",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "4 HSS"
+            },
+            {
+              "label": "8 GPIO"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Auxiliary I/O",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_bd_digital_channels",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "16"
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "32"
+            },
+            {
+              "label": "54"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "NO",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Number of Bidirectional Digital Channels",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_block_ram",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "19 Mbit"
+            },
+            {
+              "label": "21 Mbit"
+            },
+            {
+              "label": "38 Mbit"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Block RAM",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_cable_length",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "select",
+          "attribute_options": [
+            {
+              "label": "2 m"
+            },
+            {
+              "label": "0.55 m"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "false",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - Cables",
+            "frontend_label": "Cable Length",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "0",
+            "is_visible_in_grid": "1",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_cable_ohm",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "select",
+          "attribute_options": [
+            {
+              "label": "50 Ohm"
+            },
+            {
+              "label": "75 Ohm"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "false",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - Cables",
+            "frontend_label": "Cable Ohm",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "0",
+            "is_visible_in_grid": "1",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_cable_type",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "select",
+          "attribute_options": [
+            {
+              "label": "Male to Male"
+            },
+            {
+              "label": "Male to Female"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "false",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - Cables",
+            "frontend_label": "Cable Type",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "0",
+            "is_visible_in_grid": "1",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_compatible_fpga",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "Kintex-7"
+            },
+            {
+              "label": "Virtex-5"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - Accessories\nBodea - FlexRio",
+            "frontend_label": "Compatible FPGA",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_digital_io_termination",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "100 Ohm"
+            },
+            {
+              "label": "50 Ohm"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Digital I/O Termination",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_dram",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "0 GB"
+            },
+            {
+              "label": "4 GB"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Dynamic RAM",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_dsp_slices",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "1700"
+            },
+            {
+              "label": "1920"
+            },
+            {
+              "label": "2760"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "DSP Slices",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_duplex",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "Full Duplex"
+            },
+            {
+              "label": "Half Duplex"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Duplex",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_fpga",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "Kintex UltraScale KU035"
+            },
+            {
+              "label": "Kintex UltraScale KU040"
+            },
+            {
+              "label": "Kintex UltraScale KU060"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "FPGA",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_fpga_module_ram",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "select",
+          "attribute_options": [
+            {
+              "label": "128MB"
+            },
+            {
+              "label": "512MB"
+            },
+            {
+              "label": "2G"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "false",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - Accessories",
+            "frontend_label": "FPGA Module RAM",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "0",
+            "is_visible_in_grid": "1",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_fpga_slices",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "50780"
+            },
+            {
+              "label": "60600"
+            },
+            {
+              "label": "82920"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "FPGA Slices",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_hw_service_program_duration",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "select",
+          "attribute_options": [
+            {
+              "label": "3 Year Repair Coverage"
+            },
+            {
+              "label": "5 Year Repair Coverage"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "false",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - Hardware Services",
+            "frontend_label": "Program Duration",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "0",
+            "is_visible_in_grid": "1",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_hw_service_program_option",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "select",
+          "attribute_options": [
+            {
+              "label": "Standard Service Program"
+            },
+            {
+              "label": "Premium Service Program"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "false",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - Hardware Services",
+            "frontend_label": "Program Option",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "0",
+            "is_visible_in_grid": "1",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_logic_levels_range",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "1.2V"
+            },
+            {
+              "label": "3.3V"
+            },
+            {
+              "label": "1.8V"
+            },
+            {
+              "label": "2.5V"
+            },
+            {
+              "label": "LVDS"
+            },
+            {
+              "label": "Programmable"
+            },
+            {
+              "label": "RS-422/RS-485"
+            },
+            {
+              "label": "mLVDS"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Logic Levels And Range",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_max_clock_rate",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "1 GHz"
+            },
+            {
+              "label": "100 MHz"
+            },
+            {
+              "label": "16 MHz"
+            },
+            {
+              "label": "200 MHz"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Maximum Clock Rate",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_max_data_rate",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "1 Gbits/s"
+            },
+            {
+              "label": "100 Mbits/s"
+            },
+            {
+              "label": "16 Mbits/s"
+            },
+            {
+              "label": "300 Mbits/s"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Maximum Data Rate",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_max_sample_rate",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "1 GS/s"
+            },
+            {
+              "label": "500 MS/s"
+            },
+            {
+              "label": "6.4 GS/s"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Maximum Sample Rate",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_model",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "text",
+          "attribute_options": [
+
+          ],
+          "storefront_properties": {
+            "is_filterable": "NO",
+            "used_in_product_listing": "false",
+            "is_filterable_in_search": "false",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Model",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_part_number",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "text",
+          "attribute_options": [
+
+          ],
+          "storefront_properties": {
+            "is_filterable": "NO",
+            "used_in_product_listing": "false",
+            "is_filterable_in_search": "false",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - Accessories\nBodea - Cables\nBodea - EV Testing\nBodea - FlexRio\nBodea - Hardware Services\nBodea - Software",
+            "frontend_label": "Part Number",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "1",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_primary_industry",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "select",
+          "attribute_options": [
+            {
+              "label": "Academic and Research"
+            },
+            {
+              "label": "Aerospace, Defense, and Government"
+            },
+            {
+              "label": "Electronics"
+            },
+            {
+              "label": "Energy"
+            },
+            {
+              "label": "Industrial Machinery"
+            },
+            {
+              "label": "Life Sciences"
+            },
+            {
+              "label": "Semiconductor"
+            },
+            {
+              "label": "Transportation"
+            },
+            {
+              "label": "All Industries"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "NO",
+            "used_in_product_listing": "false",
+            "is_filterable_in_search": "false",
+            "is_visible_on_front": "false",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - Accessories\nBodea - Cables\nBodea - EV Testing\nBodea - FlexRio\nBodea - Hardware Services\nBodea - Software",
+            "frontend_label": "Primary Industry",
+            "is_comparable": "0",
+            "is_filterable_in_grid": "1",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "0",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "1",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "0",
+            "is_visible_in_grid": "1",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_pxi_backplane_link",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": {
+            "label": "PCI-Express Gen3 x 8"
+          },
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "PXI Backplane Link",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_reconstruction_filter",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "Yes"
+            },
+            {
+              "label": "No"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Reconstruction Filter",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_signaling_type",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "Differential"
+            },
+            {
+              "label": "Single-Ended"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Signaling Type",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        },
+        {
+          "attribute_code": "bod_voltage_input_channels",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "4"
+            }
+          ],
+          "storefront_properties": {
+            "is_filterable": "FILTERABLE_WITH_RESULTS",
+            "used_in_product_listing": "true",
+            "is_filterable_in_search": "true",
+            "is_visible_on_front": "true",
+            "position": "0"
+          },
+          "admin_properties": {
+            "additional_data": null,
+            "attribute_set": "Bodea - FlexRio",
+            "frontend_label": "Number of Voltage Input Channels",
+            "is_comparable": "1",
+            "is_filterable_in_grid": "0",
+            "is_html_allowed_on_front": "1",
+            "is_pagebuilder_enabled": "0",
+            "is_required_in_admin_store": "0",
+            "is_searchable": "1",
+            "is_used_for_price_rules": "0",
+            "is_used_for_promo_rules": "1",
+            "is_used_in_grid": "0",
+            "is_visible": "1",
+            "is_visible_in_advanced_search": "1",
+            "is_visible_in_grid": "0",
+            "is_wysiwyg_enabled": "0",
+            "search_weight": "1",
+            "used_for_sort_by": "0"
+          }
+        }
+      ]
+    }
+  }
+}

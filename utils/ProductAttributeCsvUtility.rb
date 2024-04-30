@@ -1,5 +1,5 @@
-# ProductAttributeUtility.rb
-module ProductAttributeUtility
+# ProductAttributeCsvUtility.rb
+module ProductAttributeCsvUtility
   def get_string_data
     @data["items"].map do |items|
       items.select do |key, value|
