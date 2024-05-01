@@ -2,3 +2,4 @@
 node_modules
 data/input/*
 data/output/*
+!data/input/.gitignore
