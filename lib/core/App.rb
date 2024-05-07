@@ -14,7 +14,7 @@ class App
     @output_file = nil
     @converter = nil
 
-    create_output_dir
+    create_app_dirs
   end
 
   def converter_map()
@@ -54,12 +54,22 @@ class App
     end
   end
 
-  def create_output_dir()
-    if !Dir.exist?(@output_dir)
-      print "Creating output directory..."
-      Dir.mkdir(@output_dir) unless Dir.exist?(@output_dir)
-      sleep 0.25
-      puts "done."
+  def app_dir_name(path)
+    path.split(File::SEPARATOR)[-2..-1].map { |res| File.basename(res) }.join(File::SEPARATOR)
+  end
+  
+  def create_app_dirs()
+    csv_dir = File.join(@app_root, 'data', 'output', 'csv')
+    json_dir = File.join(@app_root, 'data', 'output', 'json')
+    dirs = [@output_dir, csv_dir, json_dir]
+    
+    dirs.each do |path|
+      if !Dir.exist?(path)
+        print "Creating #{app_dir_name(path)} app directory..."
+        Dir.mkdir(path) unless Dir.exist?(path)
+        sleep 0.25
+        puts "done."
+      end
     end
   end
 
@@ -73,7 +83,7 @@ class App
   end
   
   def output_file()
-    @output_file = File.join(@output_dir, "#{@input_file.type}#{output_extension}")
+    @output_file = File.join(@output_dir, output_extension[1..-1], "#{@input_file.type}#{output_extension}")
   end
 
   def write_ouput(file)    
