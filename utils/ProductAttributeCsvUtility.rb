@@ -64,4 +64,12 @@ module ProductAttributeCsvUtility
 
     @values = @values.zip(values).map(&:flatten)
   end
+
+  def convert_to_csv_string(arr)
+    arr.map { |v| v.nil? ? "" : "#{v.to_s.gsub('"', '""')}" }
+  end
+
+  def convert_from_csv_string(str)
+    JSON.parse(str.gsub('\\\"', '"')).each { |row| row.map! { |v| v == "" ? nil : v } }
+  end
 end

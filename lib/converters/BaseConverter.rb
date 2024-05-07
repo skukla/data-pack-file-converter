@@ -64,8 +64,9 @@ class BaseConverter
   end
 
   def set_csv_headers(headers_arr = nil)  
-    if @data.is_a?(Hash)
-      return @data.keys if headers_arr.nil?
+    if headers_arr.nil?
+      return @data.keys if @data.is_a?(Hash)
+      return @data[0] if @data.is_a?(Array)
     end
 
     headers_arr
@@ -76,6 +77,10 @@ class BaseConverter
       @data = [@data.values]
     end
 
+    if @data.is_a?(Array)
+      @data.shift
+    end
+    
     @data
   end
 
