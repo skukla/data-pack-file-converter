@@ -16,6 +16,14 @@ class SettingsConverter < BaseConverter
   def set_csv_headers
     %w[name value]
   end
+
+  def set_csv_data
+    if @data.is_a?(Hash)
+      @data = [@data.values]
+    end
+    
+    @data
+  end
   
   def csv_to_hash
     hash_from_array = {}
