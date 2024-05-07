@@ -1,10 +1,8 @@
 require_relative '../../utils/ProductAttributeCsvUtility'
-require_relative '../../utils/ProductAttributeJsonUtility'
 
 # lib/converters/CustomersConverter.rb
 class  CustomersConverter < BaseConverter
   include ProductAttributeCsvUtility
-  include ProductAttributeJsonUtility
   
   def initialize(file)
     @data = file.content
@@ -17,7 +15,7 @@ class  CustomersConverter < BaseConverter
     "customerExport"
   end
 
-    def add_data_shell(data)
+  def add_data_shell(data)
     @data = { 
       "data": { 
         "#{data_key}": "#{data}"
