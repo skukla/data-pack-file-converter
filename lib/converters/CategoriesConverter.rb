@@ -33,6 +33,10 @@ class CategoriesConverter < BaseConverter
     @data = @data.map { |hash| hash.values }
   end
 
+  def set_csv_data
+    @data
+  end
+
   def build_csv
     headers = set_csv_headers
     headers.delete('url_path')

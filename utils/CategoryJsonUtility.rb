@@ -23,14 +23,11 @@ module CategoryJsonUtility
   end
 
   def resort_categories
-    sorted_hashes = []
-
-    @data.each do |hash|
-      sorted_hashes << hash
-      sorted_hashes += children_of(hash) if has_children?(hash)
+    parent_hashes.each do |parent_hash|
+      renumber_child_positions(parent_hash)
     end
 
-    @data = sorted_hashes.uniq { |hash| hash["name"] }
+    sort_categories
   end
 
   private
@@ -45,6 +42,28 @@ module CategoryJsonUtility
 
   def has_children?(parent_hash)
     @data.any? { |hash| child_of_parent?(hash, parent_hash) }
+  end
+
+  def renumber_child_positions(parent_hash)
+    children = children_of(parent_hash)
+    return if children.empty?
+
+    first_child_position = children.min_by { |child| child["position"] }["position"]
+    children.each { |child| child["position"] = child["position"] - first_child_position + 1 }
+  end
+
+  def sort_categories
+    sorted_hashes = []
+    @data.each do |hash|
+      sorted_hashes << hash
+      sorted_hashes += children_of(hash) if has_children?(hash)
+    end
+
+    @data = sorted_hashes.uniq { |hash| hash["name"] }
+  end
+
+  def parent_hashes
+    @data.select { |hash| hash["path"].empty? }
   end
 
   public
