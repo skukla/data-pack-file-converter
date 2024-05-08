@@ -22,7 +22,7 @@ class CategoriesConverter < BaseConverter
   end
 
   def set_csv_headers
-    %w[name url_key path url_path is_active is_anchor include_in_menu position display_mode page_layout]
+    %w[name url_key path url_path is_active is_anchor include_in_menu position description display_mode page_layout]
   end
 
   def extract_json_body
