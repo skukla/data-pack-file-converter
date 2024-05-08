@@ -73,10 +73,8 @@ class App
     
     dirs.each do |path|
       if !Dir.exist?(path)
-        print "Creating #{app_dir_name(path)} app directory..."
+        ScreenPrinter.print_message("#{Colors::FUSCIA}Creating #{app_dir_name(path)} app directory...#{Colors::RESET}")
         Dir.mkdir(path) unless Dir.exist?(path)
-        sleep 0.25
-        puts "done."
       end
     end
   end

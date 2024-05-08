@@ -1,10 +1,13 @@
 # main.rb
+require_relative './utils/System'
+require_relative 'lib/core/ScreenPrinter'
 require_relative 'lib/core/ArgumentHandler.rb'
 require_relative 'lib/core/App'
 require_relative 'lib/core/InputFile'
 require_relative 'lib/core/OutputFile'
 require_relative 'lib/core/FileHandler'
-require_relative 'lib/core/ScreenPrinter'
+
+System::clear_screen
 
 args = ArgumentHandler.new(ARGV).parse_arguments
 app = App.new()
@@ -22,6 +25,4 @@ app.load_input_files(args).each do |file_path|
     next
   end
   
-  
 end
-
