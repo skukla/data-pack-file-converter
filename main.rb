@@ -4,6 +4,7 @@ require_relative 'lib/core/App'
 require_relative 'lib/core/InputFile'
 require_relative 'lib/core/OutputFile'
 require_relative 'lib/core/FileHandler'
+require_relative 'lib/core/ScreenPrinter'
 
 args = ArgumentHandler.new(ARGV).parse_arguments
 app = App.new()
@@ -17,7 +18,7 @@ app.load_input_files(args).each do |file_path|
   end
   
   if app.input_file.content.nil?
-    puts "There isn't an input file for #{app.input_file.filename} -- skipping..."
+    ScreenPrinter.print_message("#{Colors::YELLOW}There isn't an input file for #{app.input_file.filename} -- skipping...#{Colors::RESET}")
     next
   end
   

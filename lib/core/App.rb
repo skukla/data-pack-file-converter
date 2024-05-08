@@ -1,4 +1,5 @@
 require 'pathname'
+require_relative './ScreenPrinter'
 require_relative '../converters/SettingsConverter'
 require_relative '../converters/StoresConverter'
 require_relative '../converters/ProductAttributes'
@@ -41,7 +42,8 @@ class App
     converter = converter_map.select { |converter| converter[:file] == @input_file.type }.first
     
     if converter.nil?
-      puts "There isn't a #{@input_file.type} converter in the converter map -- skipping #{@input_file.filename}..."
+      
+      ScreenPrinter.print_message("There isn't a converter for #{@input_file.type.split('_').map(&:capitalize).join(' ')} in the converter map -- #{Colors::YELLOW}skipping #{@input_file.filename}#{Colors::RESET}...")
       
       return
     end
@@ -93,7 +95,7 @@ class App
   def write_ouput(file)    
     handler = FileHandler.new(file.path, file.extension)
     
-    puts "Writing #{file.filename}..."
+    ScreenPrinter.print_message("#{Colors::GREEN}Writing #{file.filename}...#{Colors::RESET}")
     
     handler.write(file.content)
   end
