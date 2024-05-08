@@ -8,11 +8,12 @@ require_relative '../converters/CustomerAddressesConverter'
 require_relative '../converters/AdvancedPricingConverter'
 
 class App
-  attr_reader :converter, :input_file_list, :output_dir
+  attr_reader :input_dir, :converter, :input_file_list, :output_dir
   attr_accessor :input_file
 
   def initialize()
     @app_root = Pathname.getwd.to_s
+    @input_dir = File.join(@app_root, 'data', 'input')
     @output_dir = File.join(@app_root,'data', 'output')
     @input_file = nil
     @output_file = nil
@@ -30,6 +31,12 @@ class App
       { file: 'customer_addresses', class: CustomerAddressesConverter },
       { file: 'advanced_pricing', class: AdvancedPricingConverter }
     ]
+  end
+
+  def set_input(args)
+    return @input_dir if args.nil?
+
+    File.join(@input_dir, args)
   end
 
   def load_input_files(argument)

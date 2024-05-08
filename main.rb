@@ -11,8 +11,9 @@ System::clear_screen
 
 args = ArgumentHandler.new(ARGV).parse_arguments
 app = App.new()
-app.load_input_files(args).each do |file_path|
-  app.input_file = InputFile.new(file_path)
+source = app.set_input(args)
+app.load_input_files(source).each do |filename|
+  app.input_file = InputFile.new(filename)
   
   if !app.input_file.content.nil? && app.load_converter
     data = app.get_data
