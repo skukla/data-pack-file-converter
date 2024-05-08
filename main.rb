@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 # main.rb
 require_relative './utils/System'
 require_relative 'lib/core/ScreenPrinter'
@@ -18,7 +20,8 @@ app.load_input_files(source).each do |filename|
   if !app.input_file.content.nil? && app.load_converter
     data = app.get_data
     output_file = OutputFile.new(app.output_file, data)
-    app.write_ouput(output_file)
+
+    app.write_ouput(output_file) unless data.nil?  
   end
   
   if app.input_file.content.nil?

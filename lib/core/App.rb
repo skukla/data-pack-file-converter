@@ -6,6 +6,7 @@ require_relative '../converters/ProductAttributes'
 require_relative '../converters/CustomersConverter'
 require_relative '../converters/CustomerAddressesConverter'
 require_relative '../converters/AdvancedPricingConverter'
+require_relative '../converters/CategoriesConverter'
 
 class App
   attr_reader :input_dir, :converter, :input_file_list, :output_dir
@@ -29,7 +30,8 @@ class App
       { file: 'product_attributes', class: ProductAttributesConverter },
       { file: 'customers', class: CustomersConverter },
       { file: 'customer_addresses', class: CustomerAddressesConverter },
-      { file: 'advanced_pricing', class: AdvancedPricingConverter }
+      { file: 'advanced_pricing', class: AdvancedPricingConverter },
+      { file: 'categories', class: CategoriesConverter }
     ]
   end
 
